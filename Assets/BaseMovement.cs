@@ -5,6 +5,7 @@ using UnityEngine;
 public abstract class BaseMovement : MonoBehaviour
 {
 
+    float timer;
     public float speed = 1.5f;
     public KeyCode up;
     public KeyCode left;
@@ -12,6 +13,7 @@ public abstract class BaseMovement : MonoBehaviour
     public KeyCode down;
     public KeyCode shoot;
     public GameObject bullet;
+    public float shootSpeed = 0.15f;
 
     // Start is called before the first frame update
     void Start()
@@ -45,8 +47,11 @@ public abstract class BaseMovement : MonoBehaviour
                 gameObject.transform.Translate(0, -speed * Time.deltaTime, 0);
         }
 
-        if (Input.GetKeyDown(shoot))
+        timer += Time.deltaTime;
+
+        if (Input.GetKeyDown(shoot) && timer >= shootSpeed)
         {
+            timer = 0;
             Shoot();
         }
     }
