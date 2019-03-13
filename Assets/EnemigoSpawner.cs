@@ -37,10 +37,10 @@ public class EnemigoSpawner : MonoBehaviour
             switch (enemy)
             {
                 case EnemiesType.NormalEnemy:
-                    Instantiate(Enemigo2Prefab, position, rot);
+                    Instantiate(Enemigo1Prefab, position, rot);
                     break;
                 case EnemiesType.FasterEnemy:
-                    Instantiate(Enemigo2Prefab, position, rot);
+                    Instantiate(Enemigo1Prefab, position, rot);
                     break;
                 case EnemiesType.ShooterEnemy:
                     Instantiate(Enemigo2Prefab, position, rot);
