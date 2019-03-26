@@ -70,6 +70,7 @@
     <Compile Include="Assets\MoveDown.cs" />
     <Compile Include="Assets\Nave1Controller.cs" />
     <Compile Include="Assets\Nave2Controller.cs" />
+    <Compile Include="Assets\ScoreManager.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/jaimepm/Documents/New Unity Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
