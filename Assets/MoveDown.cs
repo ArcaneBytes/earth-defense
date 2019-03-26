@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -30,6 +30,8 @@ public class MoveDown : MonoBehaviour
     {
         if (other.gameObject.tag != "enemy" && other.gameObject.tag != "enemyBullet")
         {
+            GameObject scripter = GameObject.Find("Scripter");
+            scripter.GetComponent<ScoreManager>().increaseScore(1);
             Destroy(other.gameObject);
             Destroy(gameObject);
         }
