@@ -15,7 +15,7 @@ public class MoveDown : MonoBehaviour
     public void moveDown()
     {
         gameObject.transform.Translate(0, -speed * Time.deltaTime, 0);
-        if (gameObject.transform.position.y <= -1f)
+        if (gameObject.transform.position.y <= -0.72f)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
@@ -30,8 +30,6 @@ public class MoveDown : MonoBehaviour
     {
         if (other.gameObject.tag != "enemy" && other.gameObject.tag != "enemyBullet")
         {
-            GameObject scripter = GameObject.Find("Scripter");
-            scripter.GetComponent<ScoreManager>().increaseScore(1);
             Destroy(other.gameObject);
             Destroy(gameObject);
         }

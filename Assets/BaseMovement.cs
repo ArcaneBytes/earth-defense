@@ -25,25 +25,25 @@ public abstract class BaseMovement : MonoBehaviour
     {
         if (Input.GetKey(left))
         {
-            if (transform.position.x > -1.18f)
+            if (transform.position.x > -1f)
                 gameObject.transform.Translate(-speed * Time.deltaTime, 0, 0);
         }
 
         if (Input.GetKey(right))
         {
-            if (transform.position.x < 1.18f)
+            if (transform.position.x < 1f)
                 gameObject.transform.Translate(speed * Time.deltaTime, 0, 0);
         }
 
         if (Input.GetKey(up))
         {
-            if (transform.position.y < -1.38f)
+            if (transform.position.y < -1.05f)
                 gameObject.transform.Translate(0, speed * Time.deltaTime, 0);
         }
 
         if (Input.GetKey(down))
         {
-            if (transform.position.y > -1.85f)
+            if (transform.position.y > -1.5f)
                 gameObject.transform.Translate(0, -speed * Time.deltaTime, 0);
         }
 
