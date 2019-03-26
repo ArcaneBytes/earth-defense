@@ -60,17 +60,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\BaseMovement.cs" />
-    <Compile Include="Assets\BulletAction.cs" />
-    <Compile Include="Assets\EnemigoSpawner.cs" />
-    <Compile Include="Assets\Enemy1Controller.cs" />
-    <Compile Include="Assets\Enemy2Controller.cs" />
-    <Compile Include="Assets\Enemy3Controller.cs" />
-    <Compile Include="Assets\EnemyBulletAction.cs" />
-    <Compile Include="Assets\MoveDown.cs" />
-    <Compile Include="Assets\Nave1Controller.cs" />
-    <Compile Include="Assets\Nave2Controller.cs" />
-    <Compile Include="Assets\ScoreManager.cs" />
+    <Compile Include="Assets\Scripts\BaseMovement.cs" />
+    <Compile Include="Assets\Scripts\BulletAction.cs" />
+    <Compile Include="Assets\Scripts\ButtonsHandler.cs" />
+    <Compile Include="Assets\Scripts\EnemigoSpawner.cs" />
+    <Compile Include="Assets\Scripts\Enemy1Controller.cs" />
+    <Compile Include="Assets\Scripts\Enemy2Controller.cs" />
+    <Compile Include="Assets\Scripts\Enemy3Controller.cs" />
+    <Compile Include="Assets\Scripts\EnemyBulletAction.cs" />
+    <Compile Include="Assets\Scripts\MoveDown.cs" />
+    <Compile Include="Assets\Scripts\Nave1Controller.cs" />
+    <Compile Include="Assets\Scripts\Nave2Controller.cs" />
+    <Compile Include="Assets\Scripts\ScoreManager.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/jaimepm/Documents/New Unity Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
