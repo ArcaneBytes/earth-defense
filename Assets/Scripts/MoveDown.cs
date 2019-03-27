@@ -17,7 +17,7 @@ public class MoveDown : MonoBehaviour
         gameObject.transform.Translate(0, -speed * Time.deltaTime, 0);
         if (gameObject.transform.position.y <= -0.72f)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            SceneManager.LoadScene("StartMenu");
         }
     }
     // Update is called once per frame

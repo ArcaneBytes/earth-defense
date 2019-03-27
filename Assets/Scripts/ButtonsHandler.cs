@@ -9,4 +9,14 @@ public class ButtonsHandler : MonoBehaviour
     {
         SceneManager.LoadScene("GameScene");
     }
+
+    public void goToSettings()
+    {
+        SceneManager.LoadScene("Settings");
+    }
+
+    public void exitGame()
+    {
+        Application.Quit();
+    }
 }
