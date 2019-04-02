@@ -686,7 +686,8 @@ MonoBehaviour:
     type: 3}
   Enemigo2Prefab: {fileID: 4615002640150382961, guid: 93206e15b0938c648abe6145d7a6c8b6,
     type: 3}
-  Enemigo3Prefab: {fileID: 0}
+  Enemigo3Prefab: {fileID: 2327544730916952278, guid: 1b4f0863a05ee5a489bb8b92b8b74f16,
+    type: 3}
 --- !u!4 &564040464
 Transform:
   m_ObjectHideFlags: 0

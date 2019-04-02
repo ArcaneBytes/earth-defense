@@ -6,12 +6,14 @@ using UnityEngine.SceneManagement;
 public class MoveDown : MonoBehaviour
 {
 
+    public int lifes = 1;
     public float speed = 1f;
 
     // Start is called before the first frame update
     void Start()
     {
     }
+
     public void moveDown()
     {
         gameObject.transform.Translate(0, -speed * Time.deltaTime, 0);
@@ -26,7 +28,7 @@ public class MoveDown : MonoBehaviour
         moveDown();
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag != "enemy" && other.gameObject.tag != "enemyBullet")
         {
@@ -34,4 +36,7 @@ public class MoveDown : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+
+
 }

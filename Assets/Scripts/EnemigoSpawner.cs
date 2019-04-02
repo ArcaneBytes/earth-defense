@@ -40,10 +40,10 @@ public class EnemigoSpawner : MonoBehaviour
                     Instantiate(Enemigo1Prefab, position, rot);
                     break;
                 case EnemiesType.FasterEnemy:
-                    Instantiate(Enemigo1Prefab, position, rot);
+                    Instantiate(Enemigo2Prefab, position, rot);
                     break;
                 case EnemiesType.ShooterEnemy:
-                    Instantiate(Enemigo2Prefab, position, rot);
+                    Instantiate(Enemigo3Prefab, position, rot);
                     break;
             }
             

@@ -13,7 +13,7 @@ public abstract class BaseMovement : MonoBehaviour
     public KeyCode down;
     public KeyCode shoot;
     public GameObject bullet;
-    public float shootSpeed = 0.15f;
+    public float shootSpeed = 0.2f;
 
     // Start is called before the first frame update
     void Start()

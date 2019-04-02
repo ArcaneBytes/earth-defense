@@ -2,17 +2,28 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy3Controller : MonoBehaviour
+public class Enemy3Controller : MoveDown
 {
-    // Start is called before the first frame update
-    void Start()
+
+    public Sprite secondSprite;
+
+    private new void OnTriggerEnter2D(Collider2D other)
     {
-        
+        if (lifes > 1)
+        {
+            BeingHitted();
+            Destroy(other.gameObject);
+        }
+        else
+        { 
+            base.OnTriggerEnter2D(other);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void BeingHitted()
     {
-        
+        lifes -= 1;
+        GetComponent<SpriteRenderer>().sprite = secondSprite;
     }
+
 }
